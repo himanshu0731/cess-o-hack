@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+body {
+    background-image: url("../../image/title.svg") !important;
+}
+
+.logo {
+    margin: -0.5rem 1rem -1rem -2rem;
+    height: 4rem;
+}
+
+.main {
+    background-color: #06092d;
+    color: white;
+    width: 100%;
+}
+
+.main__left>h1 {
+    font-size: 3rem !important;
+    text-align: center;
+}
+
+.main__left>p {
+    text-align: center;
+    font-size: 2rem !important;
+}
+
+.main__left>.content {
+    font-size: 1.5rem !important;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 3rem !important;
+}
+
+.about p {
+    font-size: 1.5rem !important;
+}
+
+.tracks {
+    font-size: 2rem;
+    /* background-image: linear-gradient(    to top,    #e6dee9 100%,    #fdcbf1 1%,    #fdcbf1 0%  ); */
+    background-color: #fac2ffa6;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.tracks h1 {
+    font-size: 3rem !important;
+    color: #000000;
+    /* color: rgb(87, 85, 85); */
+}
+
+.mycard {
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+
+.mycard h3 {
+    font-size: 2rem;
+    /* color: #f6f6f6; */
+    color: #421e42;
+    /* text-shadow: 2px 3px 8px black; */
+    margin-bottom: 1.5rem;
+}
+
+.mycard img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 3px black;
+}
+
+#sponsors {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+#team {
+    padding-top: 3rem !important;
+    padding-bottom: 7rem !important;
+}
+
+.prizes {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    background-color: #fac2ffa6;
+}
+
+.prizes h1 {
+    font-size: 3rem !important;
+    color: white;
+    text-shadow: 2px 3px 8px black;
+}
+
+.prizes .prizeCard {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    /* box-shadow: 0px 1px 0px black; */
+}
+
+.prizes .first {
+    color: gold;
+}
+
+.prizes .second {
+    color: silver;
+}
+
+.prizes .third {
+    color: #c88025;
+}
+
+@media only screen and (max-width: 600px) {
+    .main__left>h1 {
+        font-size: 2rem !important;
+    }
+
+    .main__left>p {
+        font-size: 2rem !important;
+    }
+
+    .main__left>.content {
+        font-size: 1rem !important;
+        text-align: center;
+    }
+
+    .about h1 {
+        font-size: 1.5rem !important;
+    }
+
+    .about p {
+        font-size: 1rem !important;
+    }
+
+    .logo {
+        margin: -1rem 0 -1rem 0rem !important;
+        height: 4rem !important;
+    }
+
+    .navbar span {
+        font-size: 1.5rem !important;
+    }
+
+    .hi {
+        margin: auto !important;
+        height: auto !important;
+    }
+}
+
+.hi {
+    height: 43rem;
+    margin: -6rem auto auto;
+}
+
+.accordion a:not([href]) {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 3rem 1rem 1rem;
+    color: #b5deff;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.accordion a:not([href]):hover,
+.accordion a:not([href]):hover::after {
+    cursor: pointer;
+    color: purple;
+}
+
+.accordion a:not([href]):hover::after {
+    color: rgb(0, 0, 0);
+    border: 1px solid purple;
+}
+
+.test {
+    color: #421e42 !important;
+    font-weight: 600 !important;
+}
+
+.accordion a.active:not([href]) {
+    color: rgb(133, 126, 133);
+    border-bottom: 1px solid purple;
+}
+
+.accordion a:not([href])::after {
+    font-family: "Ionicons";
+    content: "\f218";
+    position: absolute;
+    float: right;
+    right: 1rem;
+    font-size: 1rem;
+    color: #7288a2;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #7288a2;
+    text-align: center;
+}
+
+.accordion a.active:not([href])::after {
+    font-family: "Ionicons";
+    content: "\f209";
+    color: purple;
+    border: 1px solid purple;
+}
+
+.accordion .content {
+    opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+    clear: both;
+    -webkit-transition: all 0.2s ease 0.15s;
+    -o-transition: all 0.2s ease 0.15s;
+    transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.accordion .content.active {
+    opacity: 1;
+    padding: 1rem;
+    max-height: 100%;
+    -webkit-transition: all 0.35s ease 0.15s;
+    -o-transition: all 0.35s ease 0.15s;
+    transition: all 0.35s ease 0.15s;
+}
+
+@-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+
+    30% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    50% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+
+    65% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    80% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes swing {
+    15% {
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+
+    30% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    50% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+
+    65% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+
+    80% {
+        -webkit-transform: translateY(4px);
+        transform: translateY(4px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.swing:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid orange; The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: -1px auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar span {
+    font-size: 2.5rem;
+}
+
+.footer {
+    background-color: #06092d;
+    color: white !important;
+    padding-top: 3rem !important;
+}
+
+.footer a:hover {
+    color: #06092d !important;
+}
+
+.footer i {
+    color: white !important;
+}
+
+.neonText {
+    color: #fff;
+    text-shadow: 0 0 7px rgb(246, 246, 61), 0 0 10px rgb(246, 246, 61);
+}
+
+/* 
+
+__  __           _        ____        
+|  \/  | __ _  __| | ___  | __ ) _   _ 
+| |\/| |/ _` |/ _` |/ _ \ |  _ \| | | |
+| |  | | (_| | (_| |  __/ | |_) | |_| |
+|_|  |_|\__,_|\__,_|\___| |____/ \__, |
+                                 |___/ 
+
+
+
+
+ +-+-+-+-+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ |N|a|m|e|       |G|i|t|h|u|b|-|U|s|e|r|n|a|m|e|
+ +-+-+-+-+       +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+ +-+-+-+-+-+-+-+-+-+-+-+-+      +-+-+-+-+-+-+-+-+-+-+-+-+-+  
+ |R|a|s|l|e|e|n| |K|a|u|r|      |(rasleenkaur)|  
+ +-+-+-+-+-+-+-+-+-+-+-+-+      +-+-+-+-+-+-+-+-+-+-+-+-+-+  
+ |P|u|k|h|r|a|j| |S|i|n|g|h|    |(pukhraj1999)|
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+    +-+-+-+-+-+-+-+-+-+-+-+-+-+ 
+ |H|i|m|a|n|s|h|u| |G|u|p|t|a|  |(himanshu0731)|
+ +-+-+-+-+-+-+-+-+-+-+-+-++-+-+ +-+-+-+-+-+-+-+-+-+-+-+-+ 
+ 
+ */
